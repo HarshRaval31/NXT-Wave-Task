@@ -1,0 +1,662 @@
+
+/* Data css */
+
+#btn1{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+#btn2{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+/* .sidebtn{
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  height:40px;
+  border-radius: 8px;
+} */
+
+.sidebtn {
+  padding: 0.5em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sidebtn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.sidebtn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+/* user data css  */
+
+/* .sidebtn2{
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 120px;
+  height:40px;
+  border-radius: 8px;
+} */
+
+.sidebtn2 {
+  padding: 0.5em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sidebtn2:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.sidebtn2:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+/* product css  */
+
+
+#btn11{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    height: 25px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+/* #btn22{
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    height: 25px;
+    border-radius: 8px;
+} */
+
+#btn22 {
+  align-items: center;
+  background-color: #FFE7E7;
+  background-position: 0 0;
+  border: 1px solid #FEE0E0;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #D33A2C;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 33.4929px;
+  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+  /* padding: 2px 12px; */
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+  width: 100px;
+}
+
+#btn22:active,
+#btn22:hover,
+#btn22:focus {
+  outline: 0;
+}
+
+
+#btn22:active {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+#btn22:hover {
+  background-color: #FFE3E3;
+  border-color: #FAA4A4;
+}
+
+#btn22:active:hover,
+#btn22:focus:hover,
+#btn22:focus {
+  background-color: #D33A2C;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #FFFFFF;
+}
+
+
+/* signup css  */
+  .mainsignup{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #signup{
+    width: 400px;
+    height: auto;
+    border: 3px double black ;
+    border-radius: 8px;
+    padding: 30px;
+    /* text-align: center; */
+    /* text-align: center; */
+  }
+  .h1{
+    /* margin-bottom: 25px; */
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .signupinput{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid black;
+  }
+  .signupinputbtn{
+    width: 60%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 70px;
+    padding-left: 10px;
+    border: 6px double black;
+    margin-bottom: 15px;
+  }
+  .p1{
+    color: red;
+    font-size: 14px;
+    font-weight: 900;
+  }
+  .center{
+    text-align: center;
+  }
+  /* login  */
+
+  .loginmain{
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form{
+    width: 400px;
+    height: auto;
+    border: 4px double black;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+  }
+  .h1{
+    margin-bottom: 25px;
+  }
+  .lohinput{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid black;
+  }
+
+    /* width: 40%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid black; */
+.lohinputbtn {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-top: 20px;
+  height: 30px;
+}
+
+.lohinputbtn:focus {
+  text-decoration: none;
+}
+
+.lohinputbtn:hover {
+  text-decoration: none;
+}
+
+.lohinputbtn:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.lohinputbtn:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
+  
+  .googel{
+    width: 50%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 90px;
+    /* padding-left: 10px; */
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  /* body{
+    background-color: #171717;
+    color: white;
+  } */
+  /* asidebar css  */
+  
+  .sidebar {
+    /* width: 250px; */
+    /* height: 100%; */
+    /* background-color: #262626; */
+    border: 1px solid black;
+    color: white;
+    position: fixed;
+    /* top: 0; */
+    left: -20%; 
+  
+    transition: left 0.5s ease-in-out;
+    padding: 20px;
+  }
+  #side2{
+    margin-left: 20%;
+  }
+  /* #sidebars{
+    border: 1px solid white;
+  } */
+  
+  .sidebar.open {
+    left: 0; 
+  }
+  /* .sidebar2.close {
+    left:0%; 
+  } */
+  
+  #ss{
+    transition: left 0.5s ease-in-out;
+  }
+  
+  #bt1{
+  
+     position: absolute;
+    left: 50px;
+  
+  }
+ 
+  #derr::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .toggle-btn {
+    position: absolute;
+    top: 20px;
+    left: 1000px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    
+  }
+  
+
+  /* navbar css  */
+
+  #icon1{
+    color: #fedb5b;
+  }
+  #H1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  }
+  #P1{
+    font-size: 15px;
+    color: gray;
+  }
+  #icon2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding-top: 7px;
+    padding-left: 7px;
+    background-color: white;
+  }
+
+  /* Product form css  */
+
+  .ProductFormMain{
+    width: 100%;
+    height: 450px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black ;
+    /* background-color: darkcyan; */
+  }
+
+  .productForm{
+    width: 400px;
+    height: auto;
+    border: 3px double black;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    color: black;
+    /* background-color: darkcyan; */
+    background-image: url(assets/particle-lines-futuristic-network-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .h1{
+    margin-bottom: 25px;
+  }
+  #productInput{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-left: 10px;
+    border: 1px solid black;
+  }
+  /* #productInputBtn{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-left: 10px;
+    /* border: 1px solid red; */
+   
+
+    #productInputBtn {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  width: 130px;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#productInputBtn:hover,
+#productInputBtn:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+#productInputBtn:active {
+  background: var(--color);
+  color: #fff;
+}
+
+  /* Skeleton css  */
+  .skeleton-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1px;
+  }
+  
+  .skeleton {
+    background-color: black;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skeleton-header {
+    height: 20px;
+    width: 80%;
+  }
+  
+  .skeleton-text {
+    height: 12px;
+    width: 100%;
+  }
+  
+  .skeleton-footer {
+    height: 20px;
+    width: 50%;
+  }
+  
+  @keyframes loading {
+    0% {
+      background-position: -200%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+  
+  .skeleton {
+    animation: loading 1.5s infinite linear;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+  }
+
+  #Navbar{
+    background-image: url(assets/particle-lines-futuristic-network-background.jpg);
+    /* background-blend-mode: overlay; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #bg{
+      background-image: url(assets/particle-lines-futuristic-network-background.jpg);
+      /* background-blend-mode: overlay; */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  #minidiv{
+    background-image: url(assets/particle-lines-futuristic-network-background.jpg);
+    /* background-blend-mode: overlay; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  #toggle_div{
+    /* height: 300px; */
+    /* background-color: red; */
+    background-color: darkcyan;
+    height: 100%;
+  }
+  #view{
+    cursor: pointer;
+  }
+  
+
+  
